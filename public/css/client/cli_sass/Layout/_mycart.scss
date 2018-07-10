@@ -1,0 +1,18 @@
+table#item-list{
+	.img-circle.size-1{
+		position: relative!important;
+		top: 0;
+		left:0;
+		background-size: contain!important;
+		background-position: center center!important;
+		width: 80px!important;
+		height: 80px!important;
+	}
+	.qty-input{
+		width: 50px;
+		padding: 5px;
+	}
+}
+textarea.order-note{
+	resize: vertical;
+}

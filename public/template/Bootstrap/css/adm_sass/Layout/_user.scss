@@ -1,0 +1,35 @@
+#user-list{
+	a{
+		color: grey;
+		&:hover{
+			color: #00c0ef;
+		}
+	}
+	input[type="checkbox"]{
+		width: 20px;
+		height: 20px;
+	}
+}
+.pagination{
+	.paginate_button{
+		&.next,&.previous{
+			a{
+			    z-index: 3;
+			    color: #fff;
+			    cursor:pointer;
+			    background-color: #337ab7;
+			    border-color: #337ab7;
+			}
+		}
+		&.previous{
+			a{
+				@include border(2px,white,'r'); 
+			}
+		}
+		&.next{
+			a{
+				@include border(1px,white,'l'); 
+			}
+		}
+	}
+}

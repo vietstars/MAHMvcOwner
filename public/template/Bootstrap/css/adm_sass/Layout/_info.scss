@@ -1,0 +1,49 @@
+.box-profile{
+	position:relative;
+	overflow: hidden;
+	@include transition(.5);
+	.profile-username{
+		i{
+			font-size: 80%;
+			font-weight: 800;
+		}
+	}
+	.acc-role{
+		text-transform: capitalize;
+	}
+	.list-group{
+		padding-bottom: 30px;
+		.list-group-item{
+			a{
+				color: grey;
+				&:hover{
+					color: red;
+				}
+			}
+		}
+	}
+}
+.nav-tabs-custom{
+	a{
+		color: grey;
+		&:hover{
+			color: red;
+		}
+	}
+	.radio{
+		display: inline-block; 
+		margin-right: 10px; 
+	}
+}
+.show-more,.show-less{
+	position: absolute;
+	bottom: 3px;
+	z-index: 999;
+	width: 100%;
+	left: 0;
+	background-color: white;	
+	.btn-show-more{
+		width: 100px;
+		margin: 0 auto;
+	}
+}

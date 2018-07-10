@@ -1,0 +1,23 @@
+.show-meta{
+	.meta-form{
+		.btn{
+			margin-left:5px;
+		}
+		.form-group.floating-label  input:focus ~ label,
+		.form-group.floating-label  input.dirty ~ label{
+			top: -10px;
+		}
+		.form-group.floating-label  input ~ label{
+			top: 10px;
+		}
+	}
+}
+.template-setting{
+	.form-group.floating-label  select:focus ~ label,
+	.form-group.floating-label  select.dirty ~ label{
+		top: -10px;
+	}
+	.form-group.floating-label  select ~ label{
+		top: 10px;
+	}
+}

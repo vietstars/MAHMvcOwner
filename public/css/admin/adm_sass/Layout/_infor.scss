@@ -1,0 +1,29 @@
+.show-system{
+	.sys-form,.app-form,.email-form{
+		.form-group.floating-label{
+			input,textarea{
+				~ label{
+					top: 9px;
+					text-transform: capitalize;
+				}
+				&.dirty{
+
+					&~ label{
+						top: -9px;
+					}
+				}
+				&:focus ~ label{
+					top: -9px;
+				}
+			}
+			textarea{	
+				resize: vertical;
+			}		
+		}
+	}
+	.sys-title{
+		font-weight: 300;
+		margin-top:0;
+		margin-bottom: 20px; 
+	}
+}

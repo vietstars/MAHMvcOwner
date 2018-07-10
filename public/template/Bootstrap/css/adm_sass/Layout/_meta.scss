@@ -1,0 +1,28 @@
+.show-meta{
+	.meta-form{
+		margin-bottom: 15px;
+		.first-item{
+			width: 15%;
+		}
+		.second-item{
+			width: 80%;
+		}
+		.third-item{
+			width: 20%;
+		}
+		.btn{
+			border-radius: 0;
+		}
+	}
+}
+#new-items{
+	.modal-body{
+		.input-group{
+			margin-bottom: 15px;
+			width: 100%;
+			.input-group-addon{
+				width: 100px;
+			}
+		}
+	}
+}

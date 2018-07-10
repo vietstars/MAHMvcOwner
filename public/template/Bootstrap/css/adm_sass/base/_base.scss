@@ -1,0 +1,21 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+html,body{
+  ::selection { background-color: #E13300; color: white; }
+  ::-moz-selection { background-color: #E13300; color: white; }
+}
+a{
+  color: white;
+  @include transition(.5s);
+  &:hover{
+    color: #3c8dbc;
+    @include transition(.5s);
+  }
+}
+.gender-mars{
+	color: #3c8dbc;
+	font-weight: bolder;
+}
+.gender-venus{
+	color: red;
+	font-weight: bolder;
+}

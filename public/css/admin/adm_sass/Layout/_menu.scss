@@ -1,0 +1,63 @@
+.show-menu{
+	padding-top:10px;
+	.menu-form{
+		padding-top: 10px;
+		.input-group-addon{
+			position: relative;
+			min-width: 30px;
+			input[type="checkbox"]{
+				position: absolute;
+				top:5px;
+				left:4px;
+				width: 20px;
+				height: 20px;
+				background: white;
+			}
+		}
+		&.locked{
+			.input-group.input-group-sm{
+				input[disabled]{
+					text-decoration: line-through;
+					background-color: #d58512;
+				}
+			}
+		}
+		.btn{
+			border-radius: 0;
+			margin-left: 5px;
+		}	
+		.checkbox.checkbox-styled{
+			display:inline-block;
+			width:19px;
+		}	
+	}
+}
+#new-items{
+	.modal-body{
+		.input-group{
+			margin-bottom: 15px;
+			width: 100%;
+			.input-group-addon{
+				width: 100px;
+			}
+		}
+	}
+}
+#getIcons{
+	a{
+		color: grey;
+		margin-bottom: 10px;
+		@include transition(.5);
+		&:hover{
+			cursor: pointer;
+			color: red;
+			@include transition(.5);
+		}
+	}
+}
+#getMenu{
+	.modal-dialog{
+		width: 30%;
+		margin: 100px auto;
+	}
+}

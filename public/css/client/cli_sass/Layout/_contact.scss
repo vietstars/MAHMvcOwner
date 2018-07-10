@@ -1,0 +1,104 @@
+.main-content{
+	&.white-bg{
+		background:#FFF;		
+	}
+	.cat-title{
+		font-family:$font-default;
+		font-weight: 100;
+		font-size: 7rem;
+		letter-spacing: 0.1rem;
+		a{
+			text-decoration: none;
+			&:hover{
+				cursor: pointer;
+				color: grey;
+			}
+		}
+	}
+	.block{
+		&.contact-block{
+			margin-top: 5rem;
+			margin-bottom: 5rem;
+			h3{
+				font-weight: 300;
+			}
+		}
+		&.contact-form-block{
+			p{
+				width: 50%;
+				margin: 10px auto;
+				font-size: 1.8rem;
+				letter-spacing: 0.2rem;
+				a{
+					color:$primary-1;
+					&:hover{
+						color: black;
+					}
+				}
+			}
+			.input_field{
+				width: 40%;
+				margin: 15px auto;
+				input,textarea,select{
+					-webkit-appearance: none;
+				    -moz-appearance: none;
+				    appearance: none;
+					width: 100%;
+					min-height: 60px;
+					padding: 10px;
+					font-size: 2.5rem;
+					@include border(2px,#CCC,a);
+				}
+				select{
+					background:url(../../img/arrow-down.png);
+				    background-position: right 18px top 50%;
+    				background-repeat: no-repeat;
+    				background-size: 15px auto;
+    				padding-right: 50px;
+				}
+				textarea{
+					font-size: 2.5rem;
+					min-height: 150px;
+					resize: vertical;
+				}
+				button{
+					background: $primary-1;	
+					font-size: 2.5rem;
+					min-height: 60px;
+					color: white;
+					width: 50%;
+					@include transition(0.5s);
+					@include border(2px,$primary-1,a);
+					&:hover{
+						cursor: pointer;
+						background: transparent;
+						color: $primary-1;
+						@include transition(0.5);
+					}
+				}
+			}
+		}
+	}
+	.cat-btn{
+		margin-bottom: 50px;
+		a{
+			padding: 15px 25px;
+			text-decoration: none;
+			background: $dark;
+			color:#FFF;
+			@include border(2px,$dark,a);
+			i.fa{
+				margin-left: 0px;
+				@include transition(0.5s);
+			}
+			&:hover{
+				background: transparent;
+				color:$dark;
+				i.fa{
+					margin-left: 20px;
+					@include transition(0.5s);
+				}
+			}
+		}
+	}
+}

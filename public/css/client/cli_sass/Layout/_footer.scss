@@ -1,0 +1,154 @@
+section.subcribe-area{
+	background-position: center center!important;
+	background-size: cover!important;
+	background-repeat: no-repeat!important;
+	padding: 50px;
+	margin-top: 153px;
+	.subcribe-bar{
+		background: rgba(#accef7,0.8);
+		margin-left: auto;
+		margin-right: auto;
+		padding: 50px;
+		h1{
+			font-weight: 300;
+			font-size: 5rem;
+			text-transform: capitalize;	
+			.edit-sbtitle{
+				position: relative;
+				width: 70%;
+				margin:0 auto; 
+				input.edit-form{
+					background: transparent;
+					display: inline-block;
+					border: none;
+					outline: none;
+				}
+				i.fa.fa-edit{
+					cursor: pointer;
+					position: absolute;
+					right: 0;
+					top: 0;
+					&:hover{
+						color: red;
+					}
+				}	
+			}	
+			small{
+				display:block;
+			}
+		}
+		.welcome-content{
+			font-size: 20px;
+		}
+		p{
+			position:relative;
+			margin: 20px auto;
+			font-size: 20px;
+			max-width: 50%;
+			textarea.edit-form{
+				background: transparent;
+				display: inline-block;
+				border: none;
+				outline: none;
+				width: 100%;
+				resize: none;
+			}
+			i.fa.fa-edit{
+				cursor: pointer;
+				position: absolute;
+				right: 0;
+				bottom: 10px;
+				&:hover{
+					color: red;
+				}
+			}
+		}
+		.input_field{
+			max-width: 70%;
+			margin: 0 auto;
+			input{
+				float:left;
+				width:60%;
+				padding: 15px 25px;
+				background: #fff;
+				color: $dark;
+				font-size: 2rem;
+				letter-spacing: 0.2rem;
+				out-line:none!important;
+				@include border(2px,$dark,a);
+				border-right:none!important;
+			}
+			button{
+				float:left;
+				width:37%;
+				padding: 15px 25px;
+				text-decoration: none;
+				background: $dark;
+				color:#fff;
+				border-radius: 0;
+				text-transform:capitalize;
+				font-size: 2rem;
+				letter-spacing: 0.2rem;
+				@include border(2px,$dark,a);
+				i.fa{
+					margin-left: 0px;
+					@include transition(0.5s);
+				}
+				&:hover{
+					background: transparent;
+					color: $dark;
+					i.fa{
+						margin-left: 20px;
+						@include transition(0.5s);
+					}
+				}
+			}
+		}
+	}
+}
+footer{
+	.footer-bar{
+		margin-top: 30px;
+		margin-bottom: 30px;
+		.about-title,.customer-title{
+			font-family:$font-default;
+			font-weight: 700;
+		}
+		.customer-list{
+			padding: 0;
+			.customer-item{
+				display: block;
+				text-align: left;
+				min-height:30px;
+				a{
+					min-height: 30px;
+					line-height: 30px;
+					text-decoration:none;
+					font-weight: 700;
+					letter-spacing: 0.15rem;
+				}
+			}
+		}
+		.about-list{
+			.about-item{
+				display: block;
+				text-align: left;
+				min-height:30px;
+				a{
+					margin-left: 40px;
+					min-height: 30px;
+					line-height: 30px;
+					text-decoration:none;
+					font-weight: 700;
+					letter-spacing: 0.15rem;
+				}
+			}
+		}
+		img{
+
+		}
+		.social-item{
+			margin-left: 10px;
+		}
+	}
+}

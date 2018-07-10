@@ -1,0 +1,75 @@
+.show-menu{
+	.menu-form{
+		margin-bottom: 15px;
+		.first-item{
+			width: 20%;
+		}
+		.second-item{
+			width: 15%;
+		}
+		.third-item{
+			width: 15%;
+		}
+		.fourth-item{
+			width: 15%;
+		}
+		.fiveth-item{
+			width: 20%;
+		}
+		.sixth-item{
+			width: 15%;
+		}
+		.input-group-addon{
+			position: relative;
+			min-width: 30px;
+			input[type="checkbox"]{
+				position: absolute;
+				top:5px;
+				left:4px;
+				width: 20px;
+				height: 20px;
+				background: white;
+			}
+		}
+		&.locked{
+			.input-group.input-group-sm{
+				input[disabled]{
+					text-decoration: line-through;
+					background-color: #d58512;
+				}
+			}
+		}
+		.btn{
+			border-radius: 0;
+		}		
+	}
+}
+#new-items{
+	.modal-body{
+		.input-group{
+			margin-bottom: 15px;
+			width: 100%;
+			.input-group-addon{
+				width: 100px;
+			}
+		}
+	}
+}
+#getIcons{
+	a{
+		color: grey;
+		margin-bottom: 10px;
+		@include transition(.5);
+		&:hover{
+			cursor: pointer;
+			color: red;
+			@include transition(.5);
+		}
+	}
+}
+#getMenu{
+	.modal-dialog{
+		width: 30%;
+		margin: 100px auto;
+	}
+}

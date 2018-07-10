@@ -1,0 +1,3 @@
+
+2018-07-10 17:23:05,127.0.0.1,Not get,Chrome,67.0.3396.99,windows,/,DELETE FROM session WHERE host=127.0.0.1 AND useragent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML; like Gecko) Chrome/67.0.3396.99 Safari/537.36 LIMIT 30
+2018-07-10 17:23:05,127.0.0.1,Not get,Chrome,67.0.3396.99,windows,/,DELETE FROM session WHERE host=127.0.0.1 AND useragent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML; like Gecko) Chrome/67.0.3396.99 Safari/537.36 LIMIT 30

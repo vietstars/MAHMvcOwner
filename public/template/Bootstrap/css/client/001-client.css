@@ -1,0 +1,28 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+html, body {
+  font-family: 'Roboto', sans-serif;
+  background: #fff url("../img/bg.png");
+  color: #4F5155; }
+  html ::selection, body ::selection {
+    background-color: #E13300;
+    color: white; }
+  html ::-moz-selection, body ::-moz-selection {
+    background-color: #E13300;
+    color: white; }
+
+/**
+*	_mixins.scss
+*/
+/*********************************************/
+.checkbox.icheck {
+  padding-left: 20px; }
+  .checkbox.icheck input {
+    width: 20px;
+    height: 20px;
+    top: -4px;
+    left: 15px; }
+
+.notify.container {
+  margin-top: 20px; }
+
+/*# sourceMappingURL=001-client.css.map */

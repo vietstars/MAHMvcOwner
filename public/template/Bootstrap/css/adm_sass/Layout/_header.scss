@@ -1,0 +1,148 @@
+body.skin-blue{
+	&.sidebar-collapse{
+		.main-header{
+			a{
+				&.logo{
+					background-color: #1d1d29;
+					@include animate-bg(.5s);
+				}
+			}
+		}
+	}
+	.main-header{
+		background-color: #1d1d29;
+		@include animate-bg(.5s);
+		a{			
+			&.logo{
+				background-color: #ed1c24;
+				@include animate-bg(.5s);
+			}
+		}
+		ul.dropdown-menu{
+			background-repeat: no-repeat!important;
+			background-size: cover!important;
+			background-position: center center!important; 
+			li.user-header{
+				.acc-role{
+					text-transform: capitalize;
+				}
+			}
+			li.user-body{
+				background-color: rgba(white,0.5);
+			}
+		}
+	}
+	.main-sidebar{
+		background-color: #1d1d29;
+		@include animate-bg(.5s); 
+		.sidebar{
+			a{
+
+				&:hover{
+					background-color: #2c2c37;
+					@include animate-bg(.5s); 
+				}
+			}
+			ul.treeview-menu{
+				background-color: lighten(#2c2c37,10%);
+				@include animate-bg(.5s);
+			}
+		}
+	}
+
+}
+
+.skin-blue .sidebar-menu > li.header {
+  color: #4b646f;
+  background: #1a2226;
+}
+.skin-blue .sidebar-menu > li > a {
+  border-left: 3px solid transparent;
+}
+.skin-blue .sidebar-menu > li:hover > a,
+.skin-blue .sidebar-menu > li.active > a,
+.skin-blue .sidebar-menu > li.menu-open > a {
+  color: #ffffff;
+  background: #1e282c;
+}
+.skin-blue .sidebar-menu > li.active > a {
+  border-left-color: #3c8dbc;
+}
+.skin-blue .sidebar-menu > li > .treeview-menu {
+  margin: 0 1px;
+  background: #2c3b41;
+}
+.skin-blue .sidebar a {
+  color: #b8c7ce;
+}
+.skin-blue .sidebar a:hover {
+  text-decoration: none;
+}
+.skin-blue .sidebar-menu .treeview-menu > li > a {
+  color: #8aa4af;
+}
+.skin-blue .sidebar-menu .treeview-menu > li.active > a,
+.skin-blue .sidebar-menu .treeview-menu > li > a:hover {
+  color: #ffffff;
+}
+.fixed-action-btn{
+	border-radius: 50%!important;
+	display: inline-block;
+    line-height: 50px;
+	text-align:center;
+	position: fixed;
+	z-index: 1000;
+    height: 50px;
+	bottom: 3rem;
+	right: 3rem;
+	width: 50px;
+	a{
+		border-radius: 50%!important;
+	    line-height: 50px;
+	    height: 50px;
+		width: 50px;
+		padding: 0;
+	}
+	&.vertizontal{
+		ul{
+			display: none;
+			position:absolute;
+			right:100%;
+			padding: 0;
+			top: 50%;
+		    transform: translateY(-50%);
+		    min-width: 160px;
+		    text-align: right;
+			li{
+				display: block;
+				line-height: 30px;
+				float:left;
+				margin-right:10px;
+				a{
+					line-height: 30px;
+				    height: 30px;
+					width: 30px;
+					padding: 0;
+				}
+			}
+		}
+	}
+	&.horizontal{
+		ul{
+			display: none;
+			position:absolute;
+			bottom: 100%;
+			right:1rem;
+			li{
+				display: block;
+				line-height: 40px;
+				a{
+					line-height: 30px;
+				    height: 30px;
+					width: 30px;
+					padding: 0;
+				}
+			}
+		}
+	}
+}

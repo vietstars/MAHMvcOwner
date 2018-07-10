@@ -1,0 +1,213 @@
+#header{
+	top:0;
+	height: 153px;
+	-webkit-box-shadow: none;
+  	box-shadow: none;
+	.headerbar{
+		min-height: 153px;
+		line-height: 153px;
+		.header-nav{
+			.menu-small{					
+				display: inline-block;				
+			}
+			.header-nav-brand{
+				position: relative;
+				min-height: 153px;
+				line-height: 153px;
+				.brand-holder{
+					a{
+						img{
+							max-height: 145px;
+						}
+						&.menu-link{
+							position: relative;
+							text-transform: capitalize;
+							font-family: $font-default;						
+							line-height: 40px;
+							min-height: 40px;
+							font-weight: 400;
+							font-size: 2rem;
+							margin: 0 40px;
+							color: black;
+							@include border(3px,transparent,'t');
+							&.active,&:hover{
+								@include border(3px,$primary-1,'t');
+							}
+							i.fa.fa-chevron-down{
+								margin-left: 10px;
+								@include transition(0.5s);
+								@include rotate(0deg);
+							}
+						}
+					}
+					&.open{
+						a{
+							i.fa.fa-chevron-down{
+								@include transition(0.5s);
+								@include rotate(-540deg);
+							}
+						}
+					}
+					.dropdown-menu{
+						top: 60%;
+						z-index: 2000;
+						li{
+							width: 100%;
+							display: block;
+							a{
+								width: 100%;
+								display: block;
+							}
+						}
+						.type-filter{
+							min-width: 650px;
+							padding-left: 5px;
+							li{
+								float: left;
+								width: 33%;
+								line-height: 25px;
+								@include border(1px,#CCC,b);
+								a{
+									width: 100%;
+									padding: 10px 5px;
+								}
+							}
+						}
+					}
+				}
+			}
+			.top-menu{
+				line-height: 20px;
+				padding: 14px 0;
+				a.top-btn{
+					text-transform: capitalize;
+					min-height: 34px;
+					line-height: 34px;
+					padding: 0 1.5rem;
+					cursor: pointer;
+					&.border{
+						@include border(1px,#CCC,'l-r');
+					}
+				}
+			}
+			i.fa.fa-shopping-cart{
+				font-size: 2rem;
+				color: #000;
+			}
+		}
+	}
+}
+.cat-nav{
+	margin-top: 153px;
+	background: rgba(0, 0, 0, 0.05);
+	color: #262626;
+	min-height: 60px;
+	line-height: 60px;
+	.cat-logo{
+		max-height: 60px;
+	}
+	.cat-nav__list{
+		padding: 0;
+		margin: 0;
+		.cat-nav__item{
+			position: relative;
+			float: left;
+			display: block;
+			margin: 0 20px;
+			a{
+				letter-spacing: 0.1rem;
+				text-decoration: none;
+				font-weight: bold;
+			}
+			&:hover{
+				cursor: pointer;
+			}
+			&.active{
+				a{
+					color: $primary-1;
+				}
+				&:before{
+				    border-left: 15px solid transparent;
+				    border-top: 15px solid #FFF;
+				    border-right: 15px solid transparent;
+				    transform: translateX(-50%);
+				    display: inline-block;
+				    position: absolute;
+				    border-bottom: 0;
+					content: '';
+				    z-index: 0;
+				    top: 0;
+				    left: 50%;
+				}
+			}
+			&.dropdown{				
+				a{
+					i.fa.fa-chevron-down{
+						@include transition(0.5s);
+						@include rotate(0deg);
+					}
+				}
+				&.open{
+					a{
+						i.fa.fa-chevron-down{
+							@include transition(0.5s);
+							@include rotate(-540deg);
+						}
+					}
+				}
+				.dropdown-menu-right,.dropdown-menu-left{
+					&.more-items{
+						li{
+							@include border(1px,#CCC,b);
+							a{
+								width: 100%;
+								padding: 10px 5px;
+							}
+							&:last-child{
+								border-bottom: 0!important;
+							}
+						}
+						.too-big{
+							min-width: 700px;
+							padding-left: 5px;
+							li{
+								display: inline-block;
+								float: left;
+								width: 33%;
+								@include border(1px,#CCC,b);
+							}
+						}
+						h5{
+							padding: 10px;
+							margin: 0;
+							@include border(1px,#CCC,b);
+						}
+					}	
+					&.sub-item{
+						min-width: 200px;
+						ul{
+							padding: 0;
+							h5{
+								padding: 10px;
+								margin: 0;
+								@include border(1px,#CCC,b);
+							}
+							li{
+								padding: 0 10px;
+								display: block;
+								@include border(1px,#CCC,b);
+								a{
+									width: 100%;
+									padding: 10px 5px;
+								}
+								&:last-child{
+									border-bottom: 0!important;
+								}
+							}
+						}
+					}	
+				}
+			}	
+		}
+	}
+}

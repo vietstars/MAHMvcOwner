@@ -1,0 +1,67 @@
+
+2018-07-10 17:23:04,127.0.0.1,Not get,,,,/,SELECT sys_key;SHA2(concat("mah.vn";"_";IF(sys_value="forever";"forever";UNIX_TIMESTAMP(sys_value)));512)`sha`;sys_value;"mah.vn"`type` FROM system WHERE type=domain AND ctl<>2 LIMIT 30
+2018-07-10 17:23:05,127.0.0.1,Not get,Chrome,67.0.3396.99,windows,/,SELECTS sys_key;sys_value;type FROM system WHERE (sys_key=title OR sys_key=icon OR sys_key=template OR type=meta) AND ctl<>2 ORDER BY sorted ASC LIMIT 30
+2018-07-10 17:23:05,127.0.0.1,Not get,Chrome,67.0.3396.99,windows,/,SELECTS `p`.id;`p`.name;`p`.desc;`p`.price;`p`.image;`b`.name as `brand` FROM product as `p` LEFT JOIN brands as `b` ON `b`.id=`p`.brand WHERE status=b AND `p`.ctl<>2 ORDER BY RAND() LIMIT 6
+2018-07-10 17:23:05,127.0.0.1,Not get,Chrome,67.0.3396.99,windows,/,SELECTS id;name FROM category WHERE ctl=0 AND ctl<>2 ORDER BY RAND() LIMIT 4
+2018-07-10 17:23:05,127.0.0.1,Not get,,,,/,SELECTS `o`.menu;`o`.controller;`o`.action;`o`.icon FROM menu as `o` WHERE `o`.ctl=0 AND `o`.type=1 AND ctl<>2 ORDER BY `o`.sorted ASC LIMIT 30
+2018-07-10 17:23:05,127.0.0.1,Not get,,,,/,SELECTS `id`; `name`; `icon` FROM brands WHERE ctl=0 AND ctl<>2 ORDER BY sorted ASC
+2018-07-10 17:23:05,127.0.0.1,Not get,,,,/,SELECTS `id`; `name` FROM type WHERE ctl=0 AND ctl<>2 ORDER BY sorted ASC
+2018-07-10 17:23:05,127.0.0.1,Not get,,,,/,SELECTS `c`.`id`; `c`.`name`; `c`.`icon`;(select count(*) FROM category WHERE main_cat=`c`.id)`subCat` FROM category as `c` WHERE `c`.ctl=0 AND `c`.main_cat=0 AND `c`.ctl<>2 ORDER BY `c`.sorted ASC
+2018-07-10 17:23:05,127.0.0.1,Not get,,,,/,SELECTS `id`;`name`;`icon` FROM category WHERE main_cat=1 AND ctl<>2 ORDER BY sorted ASC
+2018-07-10 17:23:06,127.0.0.1,Not get,,,,/,SELECTS `id`;`name`;`icon` FROM category WHERE main_cat=8 AND ctl<>2 ORDER BY sorted ASC
+2018-07-10 17:23:06,127.0.0.1,Not get,,,,/,SELECTS `id`;`name`;`icon` FROM category WHERE main_cat=9 AND ctl<>2 ORDER BY sorted ASC
+2018-07-10 17:23:06,127.0.0.1,Not get,,,,/,SELECTS `id`;`name`;`icon` FROM category WHERE main_cat=22 AND ctl<>2 ORDER BY sorted ASC
+2018-07-10 17:23:06,127.0.0.1,Not get,,,,/,SELECTS `p`.id;`p`.name;`p`.desc;`p`.price;`p`.image;`b`.name as `brand` FROM product as `p` LEFT JOIN brands as `b` ON `b`.id=`p`.brand WHERE `p`.cate=12 AND `p`.ctl<>2 ORDER BY `p`.modified DESC LIMIT 6
+2018-07-10 17:23:06,127.0.0.1,Not get,,,,/,SELECTS `p`.id;`p`.name;`p`.desc;`p`.price;`p`.image;`b`.name as `brand` FROM product as `p` LEFT JOIN brands as `b` ON `b`.id=`p`.brand WHERE `p`.cate=3 AND `p`.ctl<>2 ORDER BY `p`.modified DESC LIMIT 6
+2018-07-10 17:23:06,127.0.0.1,Not get,,,,/,SELECTS `p`.id;`p`.name;`p`.desc;`p`.price;`p`.image;`b`.name as `brand` FROM product as `p` LEFT JOIN brands as `b` ON `b`.id=`p`.brand WHERE `p`.cate=10 AND `p`.ctl<>2 ORDER BY `p`.modified DESC LIMIT 6
+2018-07-10 17:23:06,127.0.0.1,Not get,,,,/,SELECTS `p`.id;`p`.name;`p`.desc;`p`.price;`p`.image;`b`.name as `brand` FROM product as `p` LEFT JOIN brands as `b` ON `b`.id=`p`.brand WHERE `p`.cate=15 AND `p`.ctl<>2 ORDER BY `p`.modified DESC LIMIT 6
+2018-07-10 17:23:06,127.0.0.1,Not get,,,,/,SELECT df_content,content FROM text WHERE ctl=0 AND id=1 AND ctl<>2 LIMIT 30
+2018-07-10 17:23:06,127.0.0.1,Not get,,,,/,SELECT df_content,content FROM text WHERE ctl=0 AND id=2 AND ctl<>2 LIMIT 30
+2018-07-10 17:23:16,127.0.0.1,lk3Vj-.1531214584.QL5-op,,,,/brandChange,SELECT sys_key;SHA2(concat("mah.vn";"_";IF(sys_value="forever";"forever";UNIX_TIMESTAMP(sys_value)));512)`sha`;sys_value;"mah.vn"`type` FROM system WHERE type=domain AND ctl<>2 LIMIT 30
+2018-07-10 17:23:16,127.0.0.1,lk3Vj-.1531214584.QL5-op,Chrome,67.0.3396.99,windows,/brandChange,SELECTS sys_key;sys_value;type FROM system WHERE (sys_key=title OR sys_key=icon OR sys_key=template OR type=meta) AND ctl<>2 ORDER BY sorted ASC LIMIT 30
+2018-07-10 17:23:16,127.0.0.1,lk3Vj-.1531214584.QL5-op,,,,/,SELECT sys_key;SHA2(concat("mah.vn";"_";IF(sys_value="forever";"forever";UNIX_TIMESTAMP(sys_value)));512)`sha`;sys_value;"mah.vn"`type` FROM system WHERE type=domain AND ctl<>2 LIMIT 30
+2018-07-10 17:23:16,127.0.0.1,lk3Vj-.1531214584.QL5-op,Chrome,67.0.3396.99,windows,/,SELECTS sys_key;sys_value;type FROM system WHERE (sys_key=title OR sys_key=icon OR sys_key=template OR type=meta) AND ctl<>2 ORDER BY sorted ASC LIMIT 30
+2018-07-10 17:23:16,127.0.0.1,lk3Vj-.1531214584.QL5-op,Chrome,67.0.3396.99,windows,/,SELECTS `p`.id;`p`.name;`p`.desc;`p`.price;`p`.image;`b`.name as `brand` FROM product as `p` LEFT JOIN brands as `b` ON `b`.id=`p`.brand WHERE status=b AND `p`.ctl<>2 ORDER BY RAND() LIMIT 6
+2018-07-10 17:23:16,127.0.0.1,lk3Vj-.1531214584.QL5-op,Chrome,67.0.3396.99,windows,/,SELECTS id;name FROM category WHERE ctl=0 AND ctl<>2 ORDER BY RAND() LIMIT 4
+2018-07-10 17:23:16,127.0.0.1,lk3Vj-.1531214584.QL5-op,,,,/,SELECTS `o`.menu;`o`.controller;`o`.action;`o`.icon FROM menu as `o` WHERE `o`.ctl=0 AND `o`.type=1 AND ctl<>2 ORDER BY `o`.sorted ASC LIMIT 30
+2018-07-10 17:23:16,127.0.0.1,lk3Vj-.1531214584.QL5-op,,,,/,SELECTS `id`; `name`; `icon` FROM brands WHERE ctl=0 AND ctl<>2 ORDER BY sorted ASC
+2018-07-10 17:23:16,127.0.0.1,lk3Vj-.1531214584.QL5-op,,,,/,SELECTS `id`; `name` FROM type WHERE ctl=0 AND ctl<>2 ORDER BY sorted ASC
+2018-07-10 17:23:16,127.0.0.1,lk3Vj-.1531214584.QL5-op,,,,/,SELECTS `c`.`id`; `c`.`name`; `c`.`icon`;(select count(*) FROM category WHERE main_cat=`c`.id)`subCat` FROM category as `c` WHERE `c`.ctl=0 AND `c`.main_cat=0 AND `c`.ctl<>2 ORDER BY `c`.sorted ASC
+2018-07-10 17:23:16,127.0.0.1,lk3Vj-.1531214584.QL5-op,,,,/,SELECTS `id`;`name`;`icon` FROM category WHERE main_cat=1 AND ctl<>2 ORDER BY sorted ASC
+2018-07-10 17:23:16,127.0.0.1,lk3Vj-.1531214584.QL5-op,,,,/,SELECTS `id`;`name`;`icon` FROM category WHERE main_cat=8 AND ctl<>2 ORDER BY sorted ASC
+2018-07-10 17:23:16,127.0.0.1,lk3Vj-.1531214584.QL5-op,,,,/,SELECTS `id`;`name`;`icon` FROM category WHERE main_cat=9 AND ctl<>2 ORDER BY sorted ASC
+2018-07-10 17:23:16,127.0.0.1,lk3Vj-.1531214584.QL5-op,,,,/,SELECTS `id`;`name`;`icon` FROM category WHERE main_cat=22 AND ctl<>2 ORDER BY sorted ASC
+2018-07-10 17:23:16,127.0.0.1,lk3Vj-.1531214584.QL5-op,,,,/,SELECTS `p`.id;`p`.name;`p`.desc;`p`.price;`p`.image;`b`.name as `brand` FROM product as `p` LEFT JOIN brands as `b` ON `b`.id=`p`.brand WHERE `p`.cate=16 AND `p`.ctl<>2 ORDER BY `p`.modified DESC LIMIT 6
+2018-07-10 17:23:16,127.0.0.1,lk3Vj-.1531214584.QL5-op,,,,/,SELECTS `p`.id;`p`.name;`p`.desc;`p`.price;`p`.image;`b`.name as `brand` FROM product as `p` LEFT JOIN brands as `b` ON `b`.id=`p`.brand WHERE `p`.cate=20 AND `p`.ctl<>2 ORDER BY `p`.modified DESC LIMIT 6
+2018-07-10 17:23:16,127.0.0.1,lk3Vj-.1531214584.QL5-op,,,,/,SELECTS `p`.id;`p`.name;`p`.desc;`p`.price;`p`.image;`b`.name as `brand` FROM product as `p` LEFT JOIN brands as `b` ON `b`.id=`p`.brand WHERE `p`.cate=7 AND `p`.ctl<>2 ORDER BY `p`.modified DESC LIMIT 6
+2018-07-10 17:23:17,127.0.0.1,lk3Vj-.1531214584.QL5-op,,,,/,SELECTS `p`.id;`p`.name;`p`.desc;`p`.price;`p`.image;`b`.name as `brand` FROM product as `p` LEFT JOIN brands as `b` ON `b`.id=`p`.brand WHERE `p`.cate=9 AND `p`.ctl<>2 ORDER BY `p`.modified DESC LIMIT 6
+2018-07-10 17:23:17,127.0.0.1,lk3Vj-.1531214584.QL5-op,,,,/,SELECT df_content,content FROM text WHERE ctl=0 AND id=1 AND ctl<>2 LIMIT 30
+2018-07-10 17:23:17,127.0.0.1,lk3Vj-.1531214584.QL5-op,,,,/,SELECT df_content,content FROM text WHERE ctl=0 AND id=2 AND ctl<>2 LIMIT 30
+2018-07-10 17:23:19,127.0.0.1,lk3Vj-.1531214584.QL5-op,,,,/about,SELECT sys_key;SHA2(concat("mah.vn";"_";IF(sys_value="forever";"forever";UNIX_TIMESTAMP(sys_value)));512)`sha`;sys_value;"mah.vn"`type` FROM system WHERE type=domain AND ctl<>2 LIMIT 30
+2018-07-10 17:23:20,127.0.0.1,lk3Vj-.1531214584.QL5-op,Chrome,67.0.3396.99,windows,/about,SELECTS sys_key;sys_value;type FROM system WHERE (sys_key=title OR sys_key=icon OR sys_key=template OR type=meta) AND ctl<>2 ORDER BY sorted ASC LIMIT 30
+2018-07-10 17:23:20,127.0.0.1,lk3Vj-.1531214584.QL5-op,,,,/about,SELECTS `o`.menu;`o`.controller;`o`.action;`o`.icon FROM menu as `o` WHERE `o`.ctl=0 AND `o`.type=1 AND ctl<>2 ORDER BY `o`.sorted ASC LIMIT 30
+2018-07-10 17:23:20,127.0.0.1,lk3Vj-.1531214584.QL5-op,,,,/about,SELECTS `id`; `name`; `icon` FROM brands WHERE ctl=0 AND ctl<>2 ORDER BY sorted ASC
+2018-07-10 17:23:20,127.0.0.1,lk3Vj-.1531214584.QL5-op,,,,/about,SELECTS `id`; `name` FROM type WHERE ctl=0 AND ctl<>2 ORDER BY sorted ASC
+2018-07-10 17:23:20,127.0.0.1,lk3Vj-.1531214584.QL5-op,,,,/about,SELECTS `c`.`id`; `c`.`name`; `c`.`icon`;(select count(*) FROM category WHERE main_cat=`c`.id)`subCat` FROM category as `c` WHERE `c`.ctl=0 AND `c`.main_cat=0 AND `c`.ctl<>2 ORDER BY `c`.sorted ASC
+2018-07-10 17:23:20,127.0.0.1,lk3Vj-.1531214584.QL5-op,,,,/about,SELECTS `id`;`name`;`icon` FROM category WHERE main_cat=1 AND ctl<>2 ORDER BY sorted ASC
+2018-07-10 17:23:20,127.0.0.1,lk3Vj-.1531214584.QL5-op,,,,/about,SELECTS `id`;`name`;`icon` FROM category WHERE main_cat=8 AND ctl<>2 ORDER BY sorted ASC
+2018-07-10 17:23:20,127.0.0.1,lk3Vj-.1531214584.QL5-op,,,,/about,SELECTS `id`;`name`;`icon` FROM category WHERE main_cat=9 AND ctl<>2 ORDER BY sorted ASC
+2018-07-10 17:23:20,127.0.0.1,lk3Vj-.1531214584.QL5-op,,,,/about,SELECTS `id`;`name`;`icon` FROM category WHERE main_cat=22 AND ctl<>2 ORDER BY sorted ASC
+2018-07-10 17:23:23,127.0.0.1,lk3Vj-.1531214584.QL5-op,,,,/brands/10,SELECT sys_key;SHA2(concat("mah.vn";"_";IF(sys_value="forever";"forever";UNIX_TIMESTAMP(sys_value)));512)`sha`;sys_value;"mah.vn"`type` FROM system WHERE type=domain AND ctl<>2 LIMIT 30
+2018-07-10 17:23:23,127.0.0.1,lk3Vj-.1531214584.QL5-op,Chrome,67.0.3396.99,windows,/brands/10,SELECTS sys_key;sys_value;type FROM system WHERE (sys_key=title OR sys_key=icon OR sys_key=template OR type=meta) AND ctl<>2 ORDER BY sorted ASC LIMIT 30
+2018-07-10 17:23:23,127.0.0.1,lk3Vj-.1531214584.QL5-op,Chrome,67.0.3396.99,windows,/brands/10,SELECTS `p`.id;`p`.name;`p`.desc;`p`.price;`p`.image;`b`.name as `brand` FROM product as `p` LEFT JOIN brands as `b` ON `b`.id=`p`.brand WHERE status=b AND `p`.ctl<>2 ORDER BY RAND() LIMIT 6
+2018-07-10 17:23:23,127.0.0.1,lk3Vj-.1531214584.QL5-op,Chrome,67.0.3396.99,windows,/brands/10,SELECTS id;name FROM category WHERE ctl=0 AND ctl<>2 ORDER BY RAND() LIMIT 4
+2018-07-10 17:23:23,127.0.0.1,lk3Vj-.1531214584.QL5-op,,,,/brands/10,SELECTS `o`.menu;`o`.controller;`o`.action;`o`.icon FROM menu as `o` WHERE `o`.ctl=0 AND `o`.type=1 AND ctl<>2 ORDER BY `o`.sorted ASC LIMIT 30
+2018-07-10 17:23:23,127.0.0.1,lk3Vj-.1531214584.QL5-op,,,,/brands/10,SELECTS `id`; `name`; `icon` FROM brands WHERE ctl=0 AND ctl<>2 ORDER BY sorted ASC
+2018-07-10 17:23:23,127.0.0.1,lk3Vj-.1531214584.QL5-op,,,,/brands/10,SELECTS `id`; `name` FROM type WHERE ctl=0 AND ctl<>2 ORDER BY sorted ASC
+2018-07-10 17:23:23,127.0.0.1,lk3Vj-.1531214584.QL5-op,,,,/brands/10,SELECTS `c`.`id`; `c`.`name`; `c`.`icon`;(select count(*) FROM category WHERE main_cat=`c`.id)`subCat` FROM category as `c` WHERE `c`.ctl=0 AND `c`.main_cat=0 AND `c`.ctl<>2 ORDER BY `c`.sorted ASC
+2018-07-10 17:23:23,127.0.0.1,lk3Vj-.1531214584.QL5-op,,,,/brands/10,SELECTS `id`;`name`;`icon` FROM category WHERE main_cat=1 AND ctl<>2 ORDER BY sorted ASC
+2018-07-10 17:23:23,127.0.0.1,lk3Vj-.1531214584.QL5-op,,,,/brands/10,SELECTS `id`;`name`;`icon` FROM category WHERE main_cat=8 AND ctl<>2 ORDER BY sorted ASC
+2018-07-10 17:23:24,127.0.0.1,lk3Vj-.1531214584.QL5-op,,,,/brands/10,SELECTS `id`;`name`;`icon` FROM category WHERE main_cat=9 AND ctl<>2 ORDER BY sorted ASC
+2018-07-10 17:23:24,127.0.0.1,lk3Vj-.1531214584.QL5-op,,,,/brands/10,SELECTS `id`;`name`;`icon` FROM category WHERE main_cat=22 AND ctl<>2 ORDER BY sorted ASC
+2018-07-10 17:23:24,127.0.0.1,lk3Vj-.1531214584.QL5-op,,,,/brands/10,SELECTS `p`.id;`p`.name;`p`.desc;`p`.price;`p`.image;`b`.name as `brand` FROM product as `p` LEFT JOIN brands as `b` ON `b`.id=`p`.brand WHERE `p`.cate=13 AND `p`.ctl<>2 ORDER BY `p`.modified DESC LIMIT 6
+2018-07-10 17:23:24,127.0.0.1,lk3Vj-.1531214584.QL5-op,,,,/brands/10,SELECTS `p`.id;`p`.name;`p`.desc;`p`.price;`p`.image;`b`.name as `brand` FROM product as `p` LEFT JOIN brands as `b` ON `b`.id=`p`.brand WHERE `p`.cate=16 AND `p`.ctl<>2 ORDER BY `p`.modified DESC LIMIT 6
+2018-07-10 17:23:24,127.0.0.1,lk3Vj-.1531214584.QL5-op,,,,/brands/10,SELECTS `p`.id;`p`.name;`p`.desc;`p`.price;`p`.image;`b`.name as `brand` FROM product as `p` LEFT JOIN brands as `b` ON `b`.id=`p`.brand WHERE `p`.cate=12 AND `p`.ctl<>2 ORDER BY `p`.modified DESC LIMIT 6
+2018-07-10 17:23:24,127.0.0.1,lk3Vj-.1531214584.QL5-op,,,,/brands/10,SELECTS `p`.id;`p`.name;`p`.desc;`p`.price;`p`.image;`b`.name as `brand` FROM product as `p` LEFT JOIN brands as `b` ON `b`.id=`p`.brand WHERE `p`.cate=8 AND `p`.ctl<>2 ORDER BY `p`.modified DESC LIMIT 6
+2018-07-10 17:23:24,127.0.0.1,lk3Vj-.1531214584.QL5-op,,,,/brands/10,SELECT df_content,content FROM text WHERE ctl=0 AND id=1 AND ctl<>2 LIMIT 30
+2018-07-10 17:23:24,127.0.0.1,lk3Vj-.1531214584.QL5-op,,,,/brands/10,SELECT df_content,content FROM text WHERE ctl=0 AND id=2 AND ctl<>2 LIMIT 30

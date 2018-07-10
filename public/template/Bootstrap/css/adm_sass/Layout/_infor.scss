@@ -1,0 +1,16 @@
+.show-system{
+	.email-form,.app-form,.data-form{
+		.input-group.input-group-sm{
+			margin-bottom:10px;
+			input.form-control{
+				border-radius: 0;
+			}
+			.input-group-addon.first-item{
+				min-width: 150px;
+			}
+		}
+	}
+	.btn-submit.pull-right{
+		margin-top: 10px;
+	}
+}

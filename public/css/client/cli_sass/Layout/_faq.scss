@@ -1,0 +1,34 @@
+.main-content{
+	.items-3top{
+		margin-top: 3rem;
+		.item-top{
+			padding: 3rem;
+			background: #e6f9ee;
+			font-size: 2.5rem;
+			svg{
+				display: block;
+				width: 6rem;
+				height: 6rem;
+				margin:3rem auto; 
+			}
+		}
+		:first-child{
+			.item-top{
+				background: #e9fbfe;
+			}
+		}
+		:last-child{
+			.item-top{
+				background: #fff9de;
+			}
+		}
+	}
+	h2.cat-title.text-center{
+		font-size: 5rem;
+		font-weight: 400;
+	}
+	h6{
+		font-size: 14px;
+		font-weight: 600;
+	}
+}

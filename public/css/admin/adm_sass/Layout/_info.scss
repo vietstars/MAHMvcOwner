@@ -1,0 +1,72 @@
+.nav-stacked{
+	li{
+		a{
+			color: grey;
+			text-decoration: none;
+			border-radius: 0;
+			&:hover{
+    			background-color: #e5e6e6;
+			}
+		}
+	}
+}
+.nav-tabs{
+	li{
+		a{
+			border-color: #e5e6e6 #e5e6e6 #dddddd;
+		    background-color: #eeeeee;
+			color: #3c8dbc;
+			&:hover{
+				color:red;
+				border-color: #3c8dbc #3c8dbc #3c8dbc;
+			}
+		}
+	}
+}
+.dl-horizontal{
+	a{
+		color: grey;
+		text-decoration: none;
+		border-radius: 0;
+		&:hover{
+			background-color: #e5e6e6;
+		}
+	}
+}
+input.acc-fullname{
+	border: none;
+	outline: none;
+	font-size: 36px;
+	font-weight: 300;
+	line-height: 1.1;
+}
+select.acc-role{
+	text-transform: capitalize;
+	font-style: italic;
+	color: #949494;
+	outline: none;
+	border: 0;
+}
+textarea#add_note{
+	resize: vertical;
+	&~label{
+		top:-9px;
+	}
+}
+.exp-row{
+	@include border(1px,#CCC,'t');
+	textarea{
+		resize: vertical;
+		&~label{
+			top:-9px!important;
+		}
+	}
+}
+#experience{
+	textarea{
+		resize: vertical;
+		&~label{
+			top:-9px!important;
+		}
+	}
+}

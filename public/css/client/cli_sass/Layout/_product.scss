@@ -1,0 +1,137 @@
+.main-content{
+	.block{
+		&.item-block{
+			.image-list{
+				width: 60%;
+				margin: 0 auto;
+				padding-top:58%;
+				background-repeat: no-repeat!important;
+				background-size: contain!important; 
+				background-position: center center!important;
+				@include border(3px,transparent,a);
+				&:hover{
+					cursor:pointer;
+					@include border(3px,#CCC,a);
+				}
+			}
+			.image-show{
+				padding-top:100%;
+				height: 0;
+				margin-bottom: 5px; 
+				background-repeat: no-repeat!important;
+				background-size: contain!important; 
+				background-position: center center!important; 
+				//@include shadow(1px, 3px, 5px, rgba(0, 0, 0, 0.33));
+			}
+			.item-detail{								
+				.item-title{
+					position:relative;
+					padding-bottom:10px;
+					small{
+						display: block;
+						margin: 15px auto; 
+					}
+					&::before{
+						content:'';
+						position:absolute;
+						bottom: 0;
+						left: 50%;
+						width: 50px;
+						height: 2px;
+						transform: translateX(-50%);
+						background: rgba(255, 153, 0, 0.4);
+					}
+				}
+				&.fix-top{
+					position:fixed;
+					width: inherit;
+					right: 10px;
+					top: 213px;
+					padding: 0 1.5rem;
+				}
+				&.fix-bottom{
+					position:absolute;
+					width: 100%;
+					bottom: 0;
+					left:0;
+				}
+				.item-info{
+					width: 40%;
+					margin: 20px 30%; 
+				}
+			}
+		}
+		&.service-block{
+			text-align: center;
+			a{
+				color: $a-changed;  
+				text-decoration: none;
+				@include transition(.5s);
+				&:hover{
+					color: $a-default;
+					@include transition(.5s);
+				}
+			}
+			:first-child{
+				.item-bottom{
+					min-height: 330px;
+					padding: 3rem;
+					background: #e9fbfe;
+					h2.service-title{
+						position: relative;
+						font-size: 6rem;
+						padding-bottom: 3rem;
+						margin-bottom: 30px;
+						&:before{
+							content: "";
+							position: absolute;
+							bottom: 0;
+							left: 50%;
+							transform: translateX(-50%);
+							height: 2px;
+							width: 20%;
+							background:#CCC;
+						} 
+					}
+					.service-content{
+						display: block;
+						margin: 0 auto;
+						font-size: 20px;
+						font-weight: 500;
+						width: 75%;
+					}
+				}
+			}
+			:last-child{
+				.item-bottom{
+					min-height: 330px;
+					padding: 3rem;
+					background: #fff9de;
+					h2.service-title{
+						position: relative;
+						font-size: 6rem;
+						padding-bottom: 3rem;
+						margin-bottom: 30px;
+						&:before{
+							content: "";
+							position: absolute;
+							bottom: 0;
+							left: 50%;
+							transform: translateX(-50%);
+							height: 2px;
+							width: 20%;
+							background:#CCC;
+						} 
+					}
+					.service-content{
+						display: block;
+						margin: 0 auto;
+						font-size: 20px;
+						font-weight: 500;
+						width: 75%;
+					}
+				}
+			}
+		}
+	}
+}

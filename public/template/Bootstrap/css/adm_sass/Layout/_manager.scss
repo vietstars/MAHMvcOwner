@@ -1,0 +1,12 @@
+#manager-list{
+	a{
+		color: grey;
+		&:hover{
+			color: #00c0ef;
+		}
+	}
+	input[type="checkbox"]{
+		width: 20px;
+		height: 20px;
+	}
+}

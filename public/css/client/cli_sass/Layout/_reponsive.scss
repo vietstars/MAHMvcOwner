@@ -1,0 +1,233 @@
+$screen-xs:                  480px !default;
+//** Deprecated `$screen-xs-min` as of v3.2.0
+$screen-xs-min:              $screen-xs !default;
+//** Deprecated `$screen-phone` as of v3.0.1
+$screen-phone:               $screen-xs-min !default;
+
+// Small screen / tablet
+//** Deprecated `$screen-sm` as of v3.0.1
+$screen-sm:                  768px !default;
+$screen-sm-min:              $screen-sm !default;
+//** Deprecated `$screen-tablet` as of v3.0.1
+$screen-tablet:              $screen-sm-min !default;
+
+// Medium screen / desktop
+//** Deprecated `$screen-md` as of v3.0.1
+$screen-md:                  992px !default;
+$screen-md-min:              $screen-md !default;
+//** Deprecated `$screen-desktop` as of v3.0.1
+$screen-desktop:             $screen-md-min !default;
+
+// Large screen / wide desktop
+//** Deprecated `$screen-lg` as of v3.0.1
+$screen-lg:                  1200px !default;
+$screen-lg-min:              $screen-lg !default;
+//** Deprecated `$screen-lg-desktop` as of v3.0.1
+$screen-lg-desktop:          $screen-lg-min !default;
+
+// So media queries don't overlap when required, provide a maximum
+$screen-xs-max:              ($screen-sm-min - 1) !default;
+$screen-sm-max:              ($screen-md-min - 1) !default;
+$screen-md-max:              ($screen-lg-min - 1) !default;
+
+@media (max-width: $screen-xs-max) {
+	#header{
+		top:0;
+		height: 64px;
+		-webkit-box-shadow: none;
+	  	box-shadow: none;
+		.headerbar{
+			min-height: 64px;
+			line-height: 64px;
+			.header-nav{
+				.menu-small{
+					position: absolute;
+					top: 100%;
+					width: 100%;
+					left:0;
+					background:#FFF;
+					li{
+						a{
+							margin: 0 20px!important;
+						}
+					}
+				}
+				.header-nav-brand{
+					position: relative;
+					min-height: 64px;
+					line-height: 64px;
+					.brand-holder{
+						a{
+							img{
+								max-height: 64px;
+							}
+							&.menu-link{
+								position: relative;
+								text-transform: capitalize;
+								font-family: $font-default;						
+								line-height: 40px;
+								min-height: 40px;
+								font-weight: 400;
+								font-size: 2rem;
+								margin: 0 40px;
+								color: black;
+								@include border(3px,transparent,'t');
+								&.active,&:hover{
+									@include border(3px,$primary-1,'t');
+								}
+								i.fa.fa-chevron-down{
+									margin-left: 10px;
+									@include transition(0.5s);
+									@include rotate(0deg);
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.cat-nav{
+		margin-top: 80px;
+		background: rgba(0, 0, 0, 0.05);
+		color: #262626;
+		min-height: 60px;
+		line-height: 60px;
+		width: 100%;
+	}
+	section.subcribe-area{
+		padding: 5px;
+		.subcribe-bar{
+			padding: 50px 10px;
+			// h1{
+			// 	font-weight: 300;
+			// 	font-size: 5rem;
+			// 	text-transform: capitalize;	
+			// 	.edit-sbtitle{
+			// 		position: relative;
+			// 		width: 70%;
+			// 		margin:0 auto; 
+			// 		input.edit-form{
+			// 			background: transparent;
+			// 			display: inline-block;
+			// 			border: none;
+			// 			outline: none;
+			// 		}
+			// 		i.fa.fa-edit{
+			// 			cursor: pointer;
+			// 			position: absolute;
+			// 			right: 0;
+			// 			top: 0;
+			// 			&:hover{
+			// 				color: red;
+			// 			}
+			// 		}	
+			// 	}	
+			// 	small{
+			// 		display:block;
+			// 	}
+			// }
+			// .welcome-content{
+			// 	font-size: 20px;
+			// }
+			// p{
+			// 	position:relative;
+			// 	margin: 20px auto;
+			// 	font-size: 20px;
+			// 	max-width: 50%;
+			// 	textarea.edit-form{
+			// 		background: transparent;
+			// 		display: inline-block;
+			// 		border: none;
+			// 		outline: none;
+			// 		width: 100%;
+			// 		resize: none;
+			// 	}
+			// 	i.fa.fa-edit{
+			// 		cursor: pointer;
+			// 		position: absolute;
+			// 		right: 0;
+			// 		bottom: 10px;
+			// 		&:hover{
+			// 			color: red;
+			// 		}
+			// 	}
+			// }
+			.input_field{
+				max-width: 98%;
+				margin: 0 auto;
+				input{
+					float:left;
+					width:55%;
+					padding: 15px 25px;
+					background: #fff;
+					color: $dark;
+					font-size: 2rem;
+					letter-spacing: 0.2rem;
+					out-line:none!important;
+					@include border(2px,$dark,a);
+					border-right:none!important;
+				}
+				button{
+					float:left;
+					width:42%;
+					padding: 15px;
+					text-decoration: none;
+					background: $dark;
+					color:#fff;
+					border-radius: 0;
+					text-transform:capitalize;
+					font-size: 2rem;
+					letter-spacing: 0.2rem;
+					@include border(2px,$dark,a);
+					i.fa{
+						display: none;
+						margin-left: 0px;
+						@include transition(0.5s);
+					}
+					&:hover{
+						background: transparent;
+						color: $dark;
+						i.fa{
+							margin-left: 20px;
+							@include transition(0.5s);
+						}
+					}
+				}
+			}
+		}
+	}
+	footer{
+		.footer-bar{
+			margin:30px 0!important;
+			div{
+				text-align: center!important;
+				ul{
+					padding: 0;
+					width: 80%;
+					margin: 0 auto;
+					li{
+						a{
+							padding: 1rem;
+							margin: 0!important;
+						}
+					}
+				}
+			}
+		}
+	}
+	.hidden-sx{
+		display: none!important;
+	}
+}
+@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {	
+	.hidden-sm{
+		display: none!important;
+	}
+}
+@media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+	
+}
+@media (min-width: $screen-lg-min) {
+	
+}

@@ -1,0 +1,14 @@
+Name,Description,Price,Brand,Category,Type,Status
+one day at a time,shirt's description,8,vespa,clothing,shirt,a
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+Note:,"correct typo (brand,category,type) and lower case.",,,,,
+Status:,"a: active, o: out of stock, h: hidden",,,,,
